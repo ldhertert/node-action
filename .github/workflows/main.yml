@@ -11,6 +11,7 @@ jobs:
     - run: npm install
     - uses: ./
       name: hello
+      id: hello
       with:
           who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
