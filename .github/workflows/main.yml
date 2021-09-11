@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
+      - name: Setup node
+        run: npm ci
       - name: Hello world action step
         id: hello
         uses: ldhertert/node-action@v1.1
